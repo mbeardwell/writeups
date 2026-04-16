@@ -1,2 +1,1 @@
-# microcorruption-writeups
-Write ups for challenges at microcorruption.com
+Here you can find my write ups for reverse engineering / binary analysis challenges at microcorruption.com

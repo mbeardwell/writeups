@@ -18,5 +18,5 @@ The password the lock wants you to input is defined in this method.
 
 It simply stores the hex string `36 71 22 6b 2c 45 67 00` at 0x2400 in memory.
 
-Entering this as in the input field completes the challenge.
+Entering this in the input field completes the challenge.
 

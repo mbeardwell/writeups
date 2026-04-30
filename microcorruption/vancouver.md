@@ -2,6 +2,10 @@
 
 This challenge can be found [here](https://microcorruption.com/debugger/Vancouver).
 
+## Overview
+
+In this challenge you write shellcode into the input which is then executed. To bypass the 'lock', you need to reverse engineer the structure of the payload and write it such that it calls the interrupt handler.
+
 ## Static analysis
 
 Manually disassembling the main function, it would look something like this in C.

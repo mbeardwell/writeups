@@ -36,21 +36,24 @@ The code in the previous tutorial solves by calling <unlock\_door>. <unlock\_doo
 
 ## Creating the input string
 
-\*(ptr + 0) == 0x26
-\*(ptr + 1) == 0x00
+`*(ptr + 0) == 0x26`
+
+`*(ptr + 1) == 0x00`
 
 This means that when the memcpy() is ran, it loads the remainder of the hex string into 0x2600 onwards (the free space I decided on earlier).
 
-\*(ptr + 2) == 0x8
+`*(ptr + 2) == 0x8`
 
 This is the length of the code which gets copied from the user input hex string into 0x2600 and onwards.
 
-\*(ptr + 3) and onwards is part of <unlock\_door> I stole from the tutorial binary:
+`*(ptr + 3)` and onwards is part of `<unlock_door>` I stole from the tutorial binary:
 
+```
 30 12 7f 00     push #0x7f
 b0 12 a8 44     call #0x44a8 <INT>
+```
 
-The call points to somewhere slightly different as <INT> is in a different location in this binary.
+The call points to somewhere slightly different as `<INT>` is in a different location in this binary.
 
 Therefore the completed user input string is:
 

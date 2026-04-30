@@ -2,7 +2,7 @@
 
 Here you can find my writeups for various online challenges related to cybersecurity.
 
-1. Microcorruption
+1. Microcorruption (manual disassembly/static analysis)
 
     1. [Vancouver](microcorruption/vancouver.md)
 

@@ -1,6 +1,8 @@
 # Write up for Microcorruption - Vancouver
 
-## Disassembly
+This challenge can be found [here](https://microcorruption.com/debugger/New%20Orleans).
+
+## Static analysis
 
 Manually disassembling the main function, it would look something like this in C.
 

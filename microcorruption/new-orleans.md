@@ -16,7 +16,7 @@
 44d4:  3041           ret
 ```
 
-This compares the entered password at r13 to the password at 0x2400 created by create\_password().
+This compares the entered password at r13 to the password at 0x2400 created by `create_password()`.
 
 ```
 447e <create_password>
@@ -32,7 +32,7 @@ This compares the entered password at r13 to the password at 0x2400 created by c
 44b0:  3041           ret
 ```
 
-create\_password() simply pastes some sequence of bytes into memory and so it is the same every time. The password is just the hex string `36 71 22 6b 2c 45 67 00`.
-Since it doesn't change, there was no need to reverse create\_password() and you could've just noted the password stored in memory in plaintext.
+`create_password()` simply pastes some sequence of bytes into memory and so it is the same every time. The password is just the hex string `36 71 22 6b 2c 45 67 00`.
+Since it doesn't change, there was no need to reverse `create_password()` and you could've just noted the password stored in memory in plaintext.
 
 I then entered this sequence into the actual challenge and solved it.

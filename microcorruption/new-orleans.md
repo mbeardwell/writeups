@@ -1,6 +1,6 @@
 # Write up for Microcorruption - New Orleans
 
-This challenge can be found [here](https://microcorruption.com/debugger/Vancouver).
+This challenge can be found [here](https://microcorruption.com/debugger/New%20Orleans).
 
 ## Static analysis
 ```
